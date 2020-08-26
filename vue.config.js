@@ -70,7 +70,16 @@ module.exports = {
     hot: true,
     hotOnly: false,
     /* 使用代理 */
-    proxy: null,
+    // proxy: null,
+    proxy: {
+      '/api':{
+        target: "http://www.web-jshtml.cn",
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api':'/productapi'
+        }
+      }
+    },
     overlay: {
       //全局模式下是否显示脚本错误
       warnings: true,
