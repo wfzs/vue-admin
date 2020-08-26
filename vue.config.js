@@ -16,7 +16,18 @@ module.exports = {
   // webpack配置
   // see https://github.com/vuejs/vue-cli/blob/dev/docs/webpack.md
   chainWebpack: config => {},
-  configureWebpack: config => {},
+  configureWebpack: config => {
+    // config.resolve = {
+    //   extensions: [".js", ".vue", ".json"], //文件优先解析后缀名顺序
+    //   alias: {
+    //     "@": path.resolve(__dirname, "./src"),
+    //     "@c": path.resolve(__dirname, "./src/components"),
+    //     "@v": path.resolve(__dirname, "./src/views"),
+    //     "@u": path.resolve(__dirname, "./src/utils"),
+    //     "@s": path.resolve(__dirname, "./src/service")
+    //   } // 别名配置
+    // }
+  },
   // vue-loader 配置项
   // https://vue-loader.vuejs.org/en/options.html
   // vueLoader: {},
